@@ -1,0 +1,132 @@
+$firstcolor:rgb(255, 255, 0);
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: black;
+
+    h1{
+        
+      a{
+        color: $firstcolor;
+        text-transform: uppercase;
+        padding-right: 80px;
+        font-weight: lighter;
+        font-size: 25px;
+        
+      }  
+    a:hover{
+    color: orangered;
+    }
+
+    }
+    
+    ul,li{
+        
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+       a{
+          color: rgb(147, 140, 140);
+       }
+         a:hover{
+         color:black;
+         background-color: $firstcolor;
+         padding: 30px 10px;
+         transition: 0.7s;
+         border: none;
+   }
+      
+    }
+}
+main{
+  
+  .homepage{
+    background-image: url(./image/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1{
+      font-size: 70px;
+      color: white;
+      padding-top: 70px;
+      span{
+        color: $firstcolor;
+      }
+    }
+    p{
+      font-size: 40px;
+      color: white;
+    }
+    button{
+      padding: 20px 35px;
+      background-color: rgba(197, 197, 55, 0.5);
+      color: white;
+      border: 1px solid $firstcolor;
+      margin-top: 30px;
+    }
+    }
+    .homepage2{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 70px;
+      padding: 0px 50px;
+      height: 300px;
+     
+      margin-top: -40px;
+      
+    .box1{
+      background-color: whitesmoke;
+      display: block;
+      
+      
+     
+      h2{
+        text-align: center;
+        color: rgb(28, 26, 26);
+        font-weight: bold;
+        padding-top: 40px;
+        
+        
+      }
+      input{
+        width: 200px;
+        margin: 40px;
+      }
+      }
+    .box2{
+      background-image: url(./image/tours-01.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      
+     }
+     .box3{
+       background-image: url(./image/tours-02.jpg);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+  }
+}
+    
+  

@@ -1,0 +1,107 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: black;
+}
+.navigation h1 a {
+  color: rgb(255, 255, 0);
+  text-transform: uppercase;
+  padding-right: 80px;
+  font-weight: lighter;
+  font-size: 25px;
+}
+.navigation h1 a:hover {
+  color: orangered;
+}
+.navigation ul, .navigation li {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.navigation ul a, .navigation li a {
+  color: rgb(147, 140, 140);
+}
+.navigation ul a:hover, .navigation li a:hover {
+  color: black;
+  background-color: rgb(255, 255, 0);
+  padding: 30px 10px;
+  transition: 0.7s;
+  border: none;
+}
+
+main .homepage {
+  background-image: url(./image/banner-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main .homepage h1 {
+  font-size: 70px;
+  color: white;
+  padding-top: 70px;
+}
+main .homepage h1 span {
+  color: rgb(255, 255, 0);
+}
+main .homepage p {
+  font-size: 40px;
+  color: white;
+}
+main .homepage button {
+  padding: 20px 35px;
+  background-color: rgba(197, 197, 55, 0.5);
+  color: white;
+  border: 1px solid rgb(255, 255, 0);
+  margin-top: 30px;
+}
+main .homepage2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  padding: 0px 50px;
+  height: 300px;
+  margin-top: -40px;
+}
+main .homepage2 .box1 {
+  background-color: whitesmoke;
+  display: block;
+}
+main .homepage2 .box1 h2 {
+  text-align: center;
+  color: rgb(28, 26, 26);
+  font-weight: bold;
+  padding-top: 40px;
+}
+main .homepage2 .box1 input {
+  width: 200px;
+  margin: 40px;
+}
+main .homepage2 .box2 {
+  background-image: url(./image/tours-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .homepage2 .box3 {
+  background-image: url(./image/tours-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */
