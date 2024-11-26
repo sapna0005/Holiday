@@ -9,7 +9,7 @@ $firstcolor:rgb(255, 255, 0);
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     list-style: none;
-}
+ }
 .navigation{
     display: flex;
     flex-direction: row;
@@ -51,82 +51,155 @@ $firstcolor:rgb(255, 255, 0);
    }
       
     }
-}
-main{
-  
-  .homepage{
-    background-image: url(./image/banner-2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    h1{
-      font-size: 70px;
-      color: white;
-      padding-top: 70px;
-      span{
-        color: $firstcolor;
-      }
-    }
-    p{
+  }
+ main{
+   background-color: whitesmoke;
+   .homepage{
+     background-image: url(./image/banner-2.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 400px;
+     display: block;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     h1{
+        font-size: 70px;
+        color: white;
+        padding-top: 70px;
+       span{
+         color: $firstcolor;
+       }
+     }
+     p{
       font-size: 40px;
       color: white;
-    }
-    button{
-      padding: 20px 35px;
-      background-color: rgba(197, 197, 55, 0.5);
-      color: white;
-      border: 1px solid $firstcolor;
-      margin-top: 30px;
-    }
-    }
-    .homepage2{
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 70px;
-      padding: 0px 50px;
-      height: 300px;
-     
-      margin-top: -40px;
-      
-    .box1{
-      background-color: whitesmoke;
-      display: block;
-      
-      
-     
-      h2{
-        text-align: center;
-        color: rgb(28, 26, 26);
-        font-weight: bold;
-        padding-top: 40px;
-        
-        
-      }
-      input{
-        width: 200px;
-        margin: 40px;
-      }
-      }
-    .box2{
-      background-image: url(./image/tours-01.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      
-      
      }
-     .box3{
-       background-image: url(./image/tours-02.jpg);
-       background-position: center;
-       background-repeat: no-repeat;
-       background-size: cover;
+     button{
+       padding: 20px 35px;
+       background-color: rgba(197, 197, 55, 0.5);
+       color: white;
+       border: 1px solid $firstcolor;
+       margin-top: 30px;
+     }
     }
-  }
-}
+     .tour{
+       height: 100vh;
+       .homepage2{
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+         gap: 70px;
+         padding: 0px 50px;
+         height: 400px;
+         margin-top: -40px;
+         .box1{
+           background-color: rgb(237, 225, 225);
+           display: block;
+           h2{
+           text-align: center;
+           color: rgb(28, 26, 26);
+           font-weight: bold;
+           padding-top: 40px;
+          }
+          input{
+           width: 200px;
+           margin: 40px;
+          }
+         }
+         .box2{
+           background-color: #2ec66b;
+            .content2{
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: center;
+              height: 80px;
+              a{
+                color: white;
+                font-weight: lighter;
+              }
+            }
+          }
+         .box3{
+            background-color:#e97262;
+           .content2{
+             display: flex;
+             flex-direction: row;
+             justify-content: space-around;
+             align-items: center;
+             height: 80px;
+              a{
+               color: white;
+               font-weight: lighter;
+              }
+            }
+          }
+        }
+      }
+        .title{
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+           h1{
+           text-align: center;
+           font-weight: lighter;
+            // padding: 40px;
+          }
+        }
+         .travel{
+           display: grid;
+           grid-template-columns: repeat(4,auto);
+           height: 100vh;
+           justify-content: center;
+           gap: 40px;
+           .travel-1,.travel-2,.travel-3,.travel-4{
+             background-color: rgb(253, 253, 253);
+             height: 380px;
+              .travelcontent{
+                h4{
+                 padding: 10px;
+                 text-transform: uppercase;
+                 font-weight: lighter;
+                 font-size: 13px;
+                 }
+               p{
+                 padding-left: 10px;
+                 padding-top: 50px;
+                 padding-bottom: 10px;
+                 color: rgb(188, 181, 181);
+                 font-size: 13px;
+                }
+              }
+               .travelcontent-1{
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: space-between;
+                 border: 1px solid rgb(221, 211, 211);
+                 a{
+                   i{
+                     border: 1px solid rgb(221, 211, 211);
+                     border-bottom: none;
+                     padding: 20px;
+                     font-size: 1.5rem;
+                     color: black;
+                     &:hover{
+                       color: $firstcolor;
+                       transition: 0.5s ease;
+                     }
+                    }
+                  }
+                 h4{
+                   font-weight: lighter;
+                   font-size: 13px;
+                   margin-top: 13px;
+                }
+              }
+           }
+          }
+        }
+      
     
+        
   
+
