@@ -18,10 +18,10 @@
             <h1><a href="#">Holiday</a></h1>
          <nav>
               <ul>
-                 <li><a href="">HOME</a></li>
-                 <li><a href="">ABOUT</a></li>
-                 <li><a href="">OUR TOURS</a></li>
-                 <li><a href="">CONTACT</a></li>
+                 <li><a href="index.html">HOME</a></li>
+                 <li><a href="about.html">ABOUT</a></li>
+                 <li><a href="ourtours.html">OUR TOURS</a></li>
+                 <li><a href="contact.html">CONTACT</a></li>
               </ul>
            </nav>
         </div>
@@ -35,22 +35,54 @@
        <p>FOR YOUR HOLIDAYS</p>
        <button>LEARN MORE</button>
       </div>
-      
+    </main>
       <section class="tour" id="tour">
        <div class="homepage2">
          <div class="box1"> 
-           <h2>Hotel</h2>
-            <form >
-             <label for="Hotel"></label> 
-             <input type="text" name="" id="Hotel" placeholder="--Select Hotel--" list="name">
-             <datalist id="name">
-                  <option value="Anaya International"></option>
-                  <option value="Hilton"></option>
-                  <option value="Four season"></option>
-                  <option value="Shangrila"></option>
-                  <option value="Aman International"></option>
-                </datalist>
+          <div class="hotel-booking-card">
+            <h2><marquee behavior="scroll" direction="left" scrollamount="5">Book Your Stay</marquee></h2>
+            <form>
+                <!-- Hotel Selection -->
+                <div class="form-group">
+                    <label for="hotel">Select Hotel:</label>
+                    <select id="hotel" name="hotel" required>
+                        <option value="" disabled selected>Select a hotel</option>
+                        <option value="hotel1">Hotel 1</option>
+                        <option value="hotel2">Hotel 2</option>
+                        <option value="hotel3">Hotel 3</option>
+                    </select>
+                </div>
+    
+                <!-- Check-In Date -->
+                <div class="form-group">
+                    <label for="check-in">Check-In Date:</label>
+                    <input type="date" id="check-in" name="check-in" required>
+                </div>
+    
+                <!-- Check-Out Date -->
+                <div class="form-group">
+                    <label for="check-out">Check-Out Date:</label>
+                    <input type="date" id="check-out" name="check-out" required>
+                </div>
+    
+                <!-- Number of Guests -->
+                <div class="form-group">
+                    <label for="guests">Number of Guests:</label>
+                    <select id="guests" name="guests" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+    
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit" class="check-now-button">Check Now</button>
+                </div>
             </form>
+        </div>
         </div>
        <div class="box2">
           <img src="./image/tours-01.jpg" alt="">
@@ -70,10 +102,8 @@
 
     
       <div class="title">
-       <div>_________________________</div>
        <h1>LOREM IPSUM DOLOR</h1>
-       <div>_________________________</div>
-     </div>
+      </div>
      <div class="travel">
       <div class="travel-1">
         <img src="./image/index-03.jpg" alt="">
@@ -126,20 +156,97 @@
         </div>
       </div>
     </div>
-    <section class="package" id="package">
-      <div>
-        <div>_______________________________</div>
-        <h1>POPULAR PACKAGES</h1>
-        <div>_______________________________</div>
+   
+    
+  
+  <section class="popular-packages">
+    <h1>POPULAR PACKAGES</h1>
+    <div class="packages-grid">
+      <div class="package-box">
+        <div class="image-part">
+          <img src="/image/tours-05.jpg" alt="Package 1">
+        </div>
+        <div class="text-part">
+          <p>Amazing Beach Getaway</p>
+          <div class="icon-links">
+            <i class="fas fa-heart"></i>
+            <a href="#">Travel</a>
+            <i class="fas fa-info-circle"></i>
+          </div>
+        </div>
       </div>
-      <div>
-        <div>box1</div>
-        <div>box2</div>
-        <div>box3</div>
-        <div>box4</div>
+      <div class="package-box">
+        <div class="image-part">
+          <img src="/image/tours-06.jpg" alt="Package 2">
+        </div>
+        <div class="text-part">
+          <p>Mountain Adventure</p>
+          <div class="icon-links">
+            <i class="fas fa-heart"></i>
+            <a href="#">Travel</a>
+            <i class="fas fa-info-circle"></i>
+          </div>
+        </div>
       </div>
+      <div class="package-box">
+        <div class="image-part">
+          <img src="/image/tours-07.jpg" alt="Package 3">
+        </div>
+        <div class="text-part">
+          <p>Historical City Tour</p>
+          <div class="icon-links">
+            <i class="fas fa-heart"></i>
+            <a href="#">Travel</a>
+            <i class="fas fa-info-circle"></i>
+          </div>
+        </div>
+      </div>
+      <div class="package-box">
+        <div class="image-part">
+          <img src="/image/tours-08.jpg"alt="Package 4">
+        </div>
+        <div class="text-part">
+          <p>Exotic Jungle Safari</p>
+          <div class="icon-links">
+            <i class="fas fa-heart"></i>
+            <a href="#">Travel</a>
+            <i class="fas fa-info-circle"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    </section>
-  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="about-us">
+        <h2>About Us</h2>
+        <p>
+          We are your ultimate holiday companion, bringing you the best travel packages, tips, and experiences. Explore the world with us!
+        </p>
+      </div>
+      <div class="newsletter">
+        <h2>Newsletter</h2>
+        <p>Subscribe to our newsletter for exclusive travel deals and updates!</p>
+        <form>
+          <input type="email" placeholder="Enter your email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="social-icons">
+        <h2>Follow Us</h2>
+        <div class="icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Sapna Sahani. All rights reserved.</p>
+    </div>
+  </footer>
+  
 </body>
 </html>
